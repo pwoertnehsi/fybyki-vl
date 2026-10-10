@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+find . -type f -name 'update.sh' -execdir bash ./update.sh \;
+
+rsync -av ./srcpkgs ./void-packages/srcpkgs
